@@ -231,6 +231,25 @@
     pointer-events:none;
   }
   .toast.show{ opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  .phones{ white-space: nowrap; }
+  @media (max-width: 345px){
+    .phones{ font-size: 12px; }
+    .phones a{ font-size: 12px; }
+  }
+
+  .visit-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .visit-label{
+    font-size: 13px;
+    color: var(--espresso-soft);
+    margin: 0 0 12px;
+    direction: ltr;
+  }
 </style>
 </head>
 <body>
@@ -271,14 +290,21 @@
     </a>
   </div>
 
+  <div class="visit-us">
+    <p class="visit-label">Visit us at our shop</p>
+    <a class="social-btn" style="background:#EA4335;border-color:#EA4335;" href="https://www.google.com/maps/search/?api=1&query=33.9995970,36.1919370" target="_blank" rel="noopener" aria-label="الموقع على الخريطة">
+      <svg viewBox="0 0 24 24" fill="#ffffff"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+    </a>
+  </div>
+
   <div class="contact-card">
     <div class="contact-row">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <a href="tel:+96170827856">+961 70 827 856</a>
+      <span class="phones"><a href="tel:+96170827856">+961 70 827 856</a> / <a href="tel:+96170670547">+961 70 670 547</a></span>
     </div>
     <div class="contact-row">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-      <a class="loc-text" href="https://www.google.com/maps/search/?api=1&query=%D8%A8%D8%B9%D9%84%D8%A8%D9%83%D8%8C%20%D9%82%D8%B1%D8%A8%20%D8%B3%D9%8A%D9%91%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AF%D8%B1%D9%83" target="_blank" rel="noopener">بعلبك، قرب سيّار الدرك</a>
+      <a class="loc-text" href="https://www.google.com/maps/search/?api=1&query=33.9995970,36.1919370" target="_blank" rel="noopener">بعلبك، قرب سيّار الدرك</a>
     </div>
   </div>
 
